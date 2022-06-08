@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="name" id="name">
+        <input type="text" placeholder="age" id="age">
+        <select  id="gender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+        </select>
+        <input type="text" placeholder="Email" id="email">
+        <input type="text" placeholder="Mobile Number" id="mbl">
+        <input type="submit">
+            </form>
+    
+</body>
+</html>
+
+<script>
+let array= []
+
+document.querySelector("form").addEventListener("submit",getLoginDetail)
+
+function getLoginDetail(){
+    event.preventDefault()
+
+    let details= {
+        userName: document.querySelector("#name").value,
+        userage: document.querySelector("#age").value,
+        usergender: document.querySelector("#gender").value,
+        useremail: document.querySelector("#email").value,
+        usermbl: document.querySelector("#mbl").value,
+
+    };
+    array.push(details);
+    console.log(array)
+}
+
+</script>

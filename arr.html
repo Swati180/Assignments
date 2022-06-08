@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+//Convert In ARRAY
+
+// let numbers=[1,2,3,4,5,6,7]
+
+// localStorage.setItem("arrOfNumbers",JSON.stringify(numbers))
+
+// let names= ["sud","swati","arti"]
+
+// localStorage.setItem("arrOfNames",JSON.stringify(names))
+
+//Convert In OBJECT
+
+let Names= {name:"sud",place:"ghar",city:"Ujjain",type:"ok"}
+
+// localStorage.setItem("detail", JSON.stringify(Names))
+
+// let getobj= localStorage.getItem("detail");
+// console.log(getobj);
+
+//Convert In JSON to Obj
+
+// let Info= {name:"sud",place:"ghar",city:"Ujjain"}
+
+let getJSON=JSON.parse(localStorage.getItem("detail"));
+console.log(getJSON);
+
+// let getArr = localStorage.getItem("arrOfNumbers")
+// console.log(typeof getArr)//"1,2,3,4,5,6,7"
+
+//JSON(Javascript object Notation)
+
+</script>
